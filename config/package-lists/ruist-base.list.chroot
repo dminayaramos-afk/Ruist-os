@@ -1,0 +1,14 @@
+sudo
+bash-completion
+curl
+wget
+nano
+htop
+unzip
+zip
+p7zip-full
+pciutils
+usbutils
+lshw
+firmware-linux
+firmware-linux-nonfree

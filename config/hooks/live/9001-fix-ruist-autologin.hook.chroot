@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+# Crear grupo autologin si no existe
+getent group autologin >/dev/null || groupadd --system autologin
+
+# Añadir usuario ruist al grupo
+usermod -aG autologin ruist
+
+# Configuración explícita de LightDM
+mkdir -p /etc/lightdm/lightdm.conf.d
+
+cat > /etc/lightdm/lightdm.conf.d/50-ruist-live.conf <<'CONF'
+[Seat:*]
+autologin-user=ruist
+autologin-user-timeout=0
+autologin-session=xfce
+CONF
+
+echo "Ruist OS autologin configurado correctamente"

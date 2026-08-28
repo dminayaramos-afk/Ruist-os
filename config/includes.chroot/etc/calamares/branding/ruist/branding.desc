@@ -1,0 +1,34 @@
+---
+componentName:   ruist
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 800px,580px
+windowPlacement: center
+
+strings:
+    productName:         Ruist OS
+    shortProductName:    Ruist OS
+    version:             0.1
+    shortVersion:        0.1
+    versionedName:       Ruist OS 0.1
+    shortVersionedName:  Ruist OS 0.1
+    bootloaderEntryName: Ruist OS
+
+sidebar: widget
+navigation: widget
+
+images:
+    productLogo:         "ruist-logo.png"
+    productIcon:         "ruist-logo.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+style:
+   SidebarBackground:    "#26475b"
+   SidebarText:          "#FFFFFF"
+   SidebarTextCurrent:   "#fbfbfb"
+   SidebarBackgroundCurrent: "#265370"
+
+slideshowAPI: 2

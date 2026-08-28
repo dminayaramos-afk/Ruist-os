@@ -1,0 +1,20 @@
+# Archivos generados por live-build
+.build/
+binary/
+cache/
+chroot/
+*.contents
+*.files
+*.packages
+*.log
+wget-log*
+binary.modified_timestamps
+
+# ISO generada
+*.iso
+
+# Backups
+config-backup-*/
+
+# Archivos temporales
+*.tmp

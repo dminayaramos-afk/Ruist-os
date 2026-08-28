@@ -1,0 +1,6 @@
+apt
+apt-utils
+unattended-upgrades
+apt-listchanges
+ca-certificates
+gnupg

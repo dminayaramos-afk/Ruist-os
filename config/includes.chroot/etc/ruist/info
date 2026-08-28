@@ -1,0 +1,5 @@
+NAME="Ruist OS"
+VERSION="0.1"
+CODENAME="Genesis"
+BASE="Debian"
+DESKTOP="XFCE"

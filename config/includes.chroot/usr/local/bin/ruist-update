@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+echo "=========================="
+echo "      Ruist OS Update"
+echo "=========================="
+echo
+
+echo "Actualizando información de paquetes..."
+apt update
+
+echo
+echo "Actualizando Ruist OS..."
+apt full-upgrade -y
+
+echo
+echo "Limpieza..."
+apt autoremove -y
+apt clean
+
+echo
+echo "Ruist OS está actualizado."

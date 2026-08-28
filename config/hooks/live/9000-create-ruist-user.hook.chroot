@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+if ! id ruist >/dev/null 2>&1; then
+    useradd -m -s /bin/bash ruist
+fi
+
+for group in dialout cdrom audio video plugdev users netdev bluetooth autologin; do
+    if getent group "$group" >/dev/null 2>&1; then
+        usermod -aG "$group" ruist
+    fi
+done
+
+passwd -d ruist
