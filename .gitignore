@@ -1,20 +1,41 @@
-# Archivos generados por live-build
-.build/
+# ========================================
+# RUIST OS - ARCHIVOS GENERADOS
+# ========================================
+
+# ISO e imágenes generadas
+*.iso
+*.img
+*.squashfs
+
+# Live-build: directorios generados
 binary/
 cache/
 chroot/
-*.contents
-*.files
-*.packages
+stage/
+build/
+.build/
+
+# Estado temporal de live-build
+binary.modified_timestamps
+chroot.files
+
+# Listados generados de la ISO
+live-image-*.contents
+live-image-*.files
+live-image-*.packages
+
+# Copias y archivos comprimidos generados
+*.tar.zst
+*.tar.gz
+*.tar.xz
+
+# Logs
 *.log
 wget-log*
-binary.modified_timestamps
 
-# ISO generada
-*.iso
-
-# Backups
+# Backups locales
 config-backup-*/
 
-# Archivos temporales
+# Temporales
 *.tmp
+*~
